@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation & Hero Section */
+.hero-section {
+  background: url('./Images/Header.png') lightgray 50% / cover no-repeat;
+  /* height: 575px; */
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero {
+  padding: 12rem 0;
+  margin-left: auto;
+}
+
+.hero h1 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero h2 {
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Inria Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero button {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.socials svg {
+  margin-bottom: .35rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.socials p {
+  font-size: 16px;
+}
+
+.about-section .col-md-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section button {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+/* Service Section */
+.service-section {
+  background: rgba(246, 246, 246, 0.83);
+  padding: 4rem 0;
+}
+
+.service-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.service-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.service-section h2 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.service-section .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 214px;
+}
+
+.service-section .col-md-8 {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  flex-shrink: 0;
+  padding: 1rem 1rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-indicator {
+  width: 500px;
+  height: 4px;
+  flex-shrink: 0;
+  background: #D9D9D9;
+}
+
+.skill-indicator .indication-A {
+  width: 200px;
+  height: 4px;
+  background: #918874;
+}
+
+.skill-indicator .indication-B {
+  width: 300px;
+  height: 4px;
+  background: #918874;
+}
+
+.skill-indicator .indication-C {
+  width: 400px;
+  height: 4px;
+  background: #918874;
+}
+
+.skill p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 4rem 0;
+}
+
+.card {
+  background: #262525;
+}
+
+.card-img-overlay {
+  margin-top: 180px;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  background: #C6C4BE;
+}
+
+.tags p {
+  color: #000;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-img {
+  transition: opacity 1s ease-in-out;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.card:hover .card-img {
+  opacity: 0.1;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.card-body {
+  display: none;
+  text-decoration: none;
+}
+
+/* Testimonials Section */
+.testimonial-section {
+  padding: 3rem 2rem;
+  background: rgba(246, 246, 246, 0.83);
+}
+
+.testimonial-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.testimonial-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testimonials .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials p {
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.testimonials h6 {
+  color: #000;
+  font-family: Inria Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+}
+
+.text {
+  padding: 0 2rem;
+}
+
+.text p {
+  padding: 0 20rem 0 0;
+}
+
+/* Blog Section */
+.blog-section {
+  background: url('./Images/blog-background.png') lightgray 50% / cover no-repeat;
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+
+.blog-section h4 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  backdrop-filter: blur(2px);
+}
+
+.blog-section h3 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blog-section h1 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blog-section p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.blog {
+  width: 327px;
+  height: 180px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+  padding-top: 2.5rem;
+  margin-top: 9rem;
+  margin-right: 2rem;
+}
+
+.latest-blog {
+  width: 484px;
+  height: 310px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+  padding-top: 4rem;
+  margin-top: 1rem;
+}
+
+.blog-description {
+  position: relative;
+  top: 120px;
+}
+
+/* Add box-shadow to the blog box */
+.blog-box {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
+  transition: box-shadow 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
+}
+
+/* Increase size and change box-shadow on hover */
+.blog-box:hover {
+  box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
+  transform: scale(1.05);
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  backdrop-filter: blur(2px);
+}
+
+.contact-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-section p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.contact-section h2 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-section p.info {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-info {
+  width: 550px;
+  height: 500px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.81);
+  padding-top: 8rem;
+  padding-left: 7rem;
+}
+
+.info {
+  margin-top: .3rem;
+  width: 550px;
+}
+
+#form {
+  width: 608px;
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  background: url('./Images/Footer.png') lightgray 50% / cover no-repeat;
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+footer p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 .5rem 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+  .hero {
+    padding: 6rem 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  .about-section h4 {
+    font-size: 18px;
+  }
+
+  .about-section h1 {
+    font-size: 24px;
+  }
+
+
+
+  .service-section h4 {
+    font-size: 18px;
+  }
+
+  .service-section h1 {
+    font-size: 24px;
+  }
+
+  .service-section h2 {
+    font-size: 20px;
+  }
+
+  .skill-indicator {
+    width: 350px;
+  }
+
+  .skill-indicator .indication-A {
+    width: 100px;
+  }
+
+  .skill-indicator .indication-B {
+    width: 195px;
+  }
+
+  .skill-indicator .indication-C {
+    width: 285px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 .skill-heading {
+    margin-top: 4px;
+  }
+
+  .portfolio-section h4 {
+    font-size: 18px;
+  }
+
+  .portfolio-section h1 {
+    font-size: 24px;
+  }
+
+  .card-body {
+    display: block;
+    text-decoration: none;
+  }
+
+  .testimonial-section {
+    padding: .5rem 2rem;
+  }
+
+  .testimonial-section h4 {
+    font-size: 18px;
+  }
+
+  .testimonial-section h1 {
+    font-size: 20px;
+  }
+
+  .blog-section h4 {
+    font-size: 18px;
+  }
+
+  .blog-section h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    padding: 0 2rem 0 0;
+  }
+
+  .blog {
+    width: auto;
+    height: 180px;
+    margin-top: 2rem;
+  }
+
+  .latest-blog {
+    width: auto;
+    height: auto;
+    padding-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .blog-description {
+    position: relative;
+    top: 2rem;
+  }
+
+  .contact-section h4 {
+    font-size: 18px;
+  }
+
+  .contact-section h1 {
+    font-size: 24px;
+  }
+
+  .contact-info {
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .info {
+    margin-top: .3rem;
+    width: auto;
+  }
+
+  #form {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* .copyright svg {
+  display: none;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.copyright {
+
+  padding: .5rem 0;
+} */
+
+/* Laptop */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {}

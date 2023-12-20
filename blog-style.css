@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.96px;
+}
+
+.hero-section {
+  background: url('./Images/blog-header.png') lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero {
+  padding: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h4 {
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  backdrop-filter: blur(2px);
+}
+
+.hero h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero p.light {
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Blog Post */
+.blog-post {
+  padding: 4rem 2rem;
+}
+
+.img-caption hr {
+  width: 1px;
+  height: 19px;
+  flex-shrink: 0;
+  background: #000;
+}
+
+.img-caption p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+
+p.bold {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.96px;
+}
+
+
+/* Footer */
+footer {
+  background: url('./Images/Footer.png') lightgray 50% / cover no-repeat;
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.socials svg {
+  margin-top: .20rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer p {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 .5rem 0;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.90px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-post {
+    padding: 1rem .3rem;
+  }
+}
