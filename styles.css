@@ -645,7 +645,7 @@ footer p {
   .latest-blog {
     width: 95dvw;
     height: auto;
-    padding-top: 4rem;
+    padding-top: .5rem;
     margin-top: 2rem;
   }
 
