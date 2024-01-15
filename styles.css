@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  background: #f6f6f6;
 }
 
 p {
@@ -19,7 +20,7 @@ a {
 }
 
 /* Navigation & Hero Section */
-.hero-section {
+header {
   background: url('./Images/Header.png') lightgray 50% / cover no-repeat;
   /* height: 575px; */
   flex-shrink: 0;
@@ -160,14 +161,14 @@ a {
   line-height: normal;
 }
 
-.service-section .col-md-4 {
+.service-section .col-md-5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 214px;
+  height: auto;
 }
 
-.service-section .col-md-8 {
+.service-section .col-md-7 {
   background: #FFF;
   display: flex;
   flex-direction: column;
@@ -507,6 +508,17 @@ footer p {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  color: #bfdbf6;
+  font-weight: 400;
 }
 
 .copyright {
