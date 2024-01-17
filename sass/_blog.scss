@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+@import './portfolio';
+@import './blog';
+
+// Variables
+$primaryTextColor: #151212;
+$secondaryTextColor: rgba(255, 255, 255, 0.80);
+
+// Functions
+
+@mixin primaryButton() {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+@mixin flexCenter($direction, $align) {
+  display: flex;
+  align-items: align;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: center;
+}
+
+@mixin paragraphStyle($textSize) {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: $textSize;
+}
+
+@mixin titleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin subtitleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blog-post {
+  padding: 4rem 2rem;
+}

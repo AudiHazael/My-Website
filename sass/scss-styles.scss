@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+@import './portfolio';
+
+
+// Variables
+$primaryTextColor: #151212;
+$secondaryTextColor: rgba(255, 255, 255, 0.80);
+
+// Functions
+
+@mixin primaryButton() {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+@mixin flexCenter($direction, $align) {
+  display: flex;
+  align-items: align;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: center;
+}
+
+@mixin paragraphStyle($textSize) {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: $textSize;
+}
+
+@mixin titleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin subtitleStyle() {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+// Header and Navigation
+
+header {
+  background: url('./Images/Header.png') lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+
+  .nav-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Inria Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero {
+    padding: 12rem 0;
+    margin-left: auto;
+    // @include flexCenter(column, center);
+
+    h2 {
+      color: rgba(255, 255, 255, 0.80);
+      font-family: Inria Sans;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    h1 {
+      color: #FFF;
+      font-family: Inria Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 20px;
+      font-family: Inria Sans;
+    }
+
+
+
+    button {
+      @include primaryButton
+    }
+
+    .blog-header {
+      p {
+        @include paragraphStyle(16px);
+        text-align: center;
+        color: $secondaryTextColor;
+        font-weight: 300;
+      }
+
+      h4 {
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        font-family: Inria Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+      }
+
+      h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Inria Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+// About Section
+
+.about-section {
+  padding: 4rem 0;
+
+  h4 {
+    @include titleStyle();
+  }
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  .col-md-4 {
+    @include flexCenter(column, normal);
+  }
+
+  .col-md-8 {
+    @include flexCenter(column, normal);
+  }
+
+  .socials {
+    p {
+      @include paragraphStyle(16px);
+    }
+
+    svg {
+      margin-bottom: .35rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  button {
+    @include primaryButton();
+  }
+}
+
+// Service Section
+
+.service-section {
+  background: rgba(246, 246, 246, 0.83);
+  padding: 4rem 0;
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  h4 {
+    @include titleStyle();
+  }
+
+  .services {
+    @include flexCenter(column, normal);
+
+    h2 {
+      color: #151212;
+      font-family: Inria Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    h4 {
+      @include titleStyle()
+    }
+
+    p {
+      @include paragraphStyle(16px);
+    }
+
+    .col-md-7 {
+      @include flexCenter(column, normal);
+      height: auto;
+      flex-shrink: 0;
+      padding: 1rem 1rem;
+      background: #FFF;
+    }
+
+    .col-md-5 {
+      @include flexCenter(column, normaal);
+    }
+  }
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  .skillsContainer {
+    .skills-container {
+      p {
+        @include paragraphStyle(16px);
+      }
+
+      .skill {
+        .skill-indicator {
+          width: 500px;
+          height: 4px;
+          flex-shrink: 0;
+          background: #D9D9D9;
+
+          p {
+            @include paragraphStyle(16px)
+          }
+
+          .indication-A {
+            width: 200px;
+            height: 4px;
+            background: #918874;
+          }
+
+          .indication-B {
+            width: 300px;
+            height: 4px;
+            background: #918874;
+          }
+
+          .indication-C {
+            width: 400px;
+            height: 4px;
+            background: #918874;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Portfolio Section
+
+.portfolio-section {
+  padding: 4rem 0;
+
+  h4 {
+    @include titleStyle();
+  }
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  .col-md-6 {
+    .card {
+      background: #262525;
+
+      .card-img {
+        transition: opacity 1s ease-in-out;
+      }
+
+      &:hover {
+        .card-img {
+          opacity: 0.1;
+        }
+
+        .card-img-overlay {
+          opacity: 1;
+        }
+      }
+
+      .card-body {
+        display: none;
+        text-decoration: none;
+      }
+
+      .card-img-overlay {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        .tag {
+          display: inline-flex;
+          padding: 2px 10px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1px;
+          background: #C6C4BE;
+
+          p {
+            @include paragraphStyle(12px);
+            color: #000;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Testimonial Section
+.testimonial-section {
+  padding: 3rem 2rem;
+  background: rgba(246, 246, 246, 0.83);
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  h4 {
+    @include titleStyle();
+  }
+
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        .row {
+          @include flexCenter(row, center);
+
+          .col-lg-8 {
+            p {
+              @include paragraphStyle(16px);
+              text-align: justify;
+            }
+
+            h6 {
+              color: #000;
+              font-family: Inria Sans;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 16px;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Blog Section
+.blog-section {
+  background: url('./Images/blog-background.png') lightgray 50% / cover no-repeat;
+  padding-top: 0;
+  padding-bottom: 5rem;
+
+  .blog-description {
+    position: relative;
+    top: 120px;
+
+    h4 {
+      @include titleStyle();
+      color: $secondaryTextColor;
+    }
+
+    h1 {
+      @include subtitleStyle();
+      color: $secondaryTextColor;
+    }
+
+    p {
+      @include paragraphStyle(14px);
+      color: #FFF;
+    }
+  }
+
+  .blog {
+    width: 327px;
+    height: 180px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    padding-top: 2.5rem;
+    margin-top: 9rem;
+    margin-right: 2rem;
+  }
+
+  h3 {
+    color: $secondaryTextColor;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    @include paragraphStyle(14px);
+    color: $secondaryTextColor;
+    font-weight: 300;
+  }
+}
+
+.latest-blog {
+  width: 484px;
+  height: 300px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.10);
+  padding-top: 6.45rem;
+  margin-top: 1.5rem;
+
+  h3 {
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    @include paragraphStyle(14px);
+    color: $secondaryTextColor;
+    font-weight: 300;
+  }
+}
+
+.blog-box {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
+  transition: box-shadow 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
+    transform: scale(1.05);
+  }
+}
+
+// Blog Page
+.blog-post {
+  padding: 4rem 2rem;
+
+  .img-caption {
+    hr {
+      width: 1px;
+      height: 19px;
+      flex-shrink: 0;
+      background: #000;
+    }
+
+    p {
+      @include paragraphStyle(10px);
+    }
+  }
+
+  p.bold {
+    @include paragraphStyle(16px);
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+  }
+}
+
+// Contact Section
+.contact-section {
+  padding: 4rem 0;
+
+  h4 {
+    @include titleStyle();
+  }
+
+  h1 {
+    @include subtitleStyle();
+  }
+
+  .info {
+    width: 550px;
+
+    p {
+      @include paragraphStyle(16px);
+      color: $primaryTextColor;
+    }
+
+    .contact-info {
+      height: 500px;
+      flex-shrink: 0;
+      border: 1px solid #000;
+      background: rgba(0, 0, 0, 0.81);
+      padding-top: 8rem;
+      padding-left: 7rem;
+
+      h2 {
+        color: #FFF;
+        font-family: Inria Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      p {
+        @include paragraphStyle(16px);
+        color: $secondaryTextColor;
+      }
+    }
+  }
+
+  .col-md-6 {
+    #form {
+      height: auto;
+      flex-shrink: 0;
+      border: 1px solid #000;
+      padding: 2rem;
+    }
+  }
+}
+
+// Footer
+footer {
+  background: url('./Images/Footer.png') lightgray 50% / cover no-repeat;
+
+  .socials {
+    @include flexCenter(row, center);
+    padding: 2rem 0;
+
+    svg {
+      margin-bottom: .35rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+  }
+
+  .links {
+    @include flexCenter(row, center);
+
+    a {
+      color: #bfdbf6;
+      font-weight: 400;
+    }
+  }
+
+  .copyright {
+    @include flexCenter(row, center);
+    padding: 2rem 0 .5rem 0;
+
+    p {
+      @include paragraphStyle(16px);
+      font-weight: 300;
+      color: #FFF;
+    }
+  }
+}
+
+// Mobile Optimizations
+
+@media only screen and (max-width: 767px) {
+  // Header and Navigation
+
+  header {
+    .hero {
+      @include flexCenter(column, center);
+      padding: 6rem 0;
+      margin-left: auto;
+
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+    }
+  }
+
+  // About Section
+
+  .about-section {
+    padding: 4rem 0;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+
+    .socials {
+      p {
+        @include paragraphStyle(12px);
+      }
+    }
+  }
+
+  // Service Section
+
+  .service-section {
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .services {
+      h4 {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        @include paragraphStyle(12px);
+      }
+    }
+
+    h1 {
+      @include subtitleStyle();
+      margin-top: 4px;
+      font-size: 24px;
+    }
+
+    .skillsContainer {
+      .skills-container {
+        @include flexCenter(column, center);
+
+        p {
+          @include paragraphStyle(12px);
+        }
+
+        .skill {
+          .skill-indicator {
+            p {
+              @include paragraphStyle(12px)
+            }
+
+            .indication-A {
+              width: 100px;
+            }
+
+            .indication-B {
+              width: 195px;
+            }
+
+            .indication-C {
+              width: 285px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Portfolio Section
+
+  .portfolio-section {
+    padding: 4rem 0;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .col-md-6 {
+      .card {
+        background: #262525;
+
+        .card-img {
+          transition: opacity 1s ease-in-out;
+        }
+
+        .card-body {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // Testimonial Section
+  .testimonial-section {
+    padding: .5rem 2rem;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  // Blog Section
+  .blog-section {
+    @include flexCenter(column, center);
+
+    .blog-description {
+      position: relative;
+      top: 2rem;
+
+      h4 {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        @include paragraphStyle(12px);
+        padding: 0 2rem 0 0;
+      }
+    }
+
+    .blog {
+      width: 95dvw;
+      height: auto;
+      margin-top: 2rem;
+    }
+  }
+
+  .latest-blog {
+    width: 95dvw;
+    height: auto;
+    padding-top: .5rem;
+    margin-top: 2rem;
+  }
+
+  .break {
+    display: none;
+  }
+
+  // Blog Page
+  .blog-post {
+    padding: 1rem .3rem;
+
+    .img-caption {
+      hr {
+        width: 1px;
+        height: 19px;
+        flex-shrink: 0;
+        background: #000;
+      }
+
+      p {
+        @include paragraphStyle(12px);
+      }
+    }
+
+    p.bold {
+      @include paragraphStyle(16px);
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.96px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  // Contact Section 
+
+  .contact-section {
+    padding: 4rem 0;
+
+    h4 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    p {
+      @include paragraphStyle(12px);
+    }
+  }
+
+  .info {
+    margin-top: .3rem;
+    width: auto;
+
+    p {
+      @include paragraphStyle(12px);
+    }
+
+    .contact-info {
+      width: auto;
+      height: auto;
+      padding-top: 2rem;
+      padding-left: 2rem;
+
+      p {
+        @include paragraphStyle(12px);
+      }
+    }
+  }
+
+  .col-md-6 {
+    #form {
+      width: auto;
+      height: auto;
+    }
+  }
+
+
+  // Footer
+  footer {
+
+    .links {
+      @include flexCenter(column, center);
+    }
+
+    .copyright {
+      @include flexCenter(row, center);
+      padding: 2rem 0 .5rem 0;
+
+      p {
+        @include paragraphStyle(12px);
+        color: #FFF;
+      }
+    }
+  }
+}
+
+
+/* Laptop */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {}

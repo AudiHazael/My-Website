@@ -19,10 +19,10 @@ a {
   text-decoration: none;
 }
 
-/* Navigation & Hero Section */
+/* Navigation & Hero Section
 header {
   background: url('./Images/Header.png') lightgray 50% / cover no-repeat;
-  /* height: 575px; */
+
   flex-shrink: 0;
 }
 
@@ -69,9 +69,9 @@ header {
   border-radius: 2px;
   background: #918874;
   border: none;
-}
+} */
 
-/* About Section */
+/* About Section
 .about-section {
   padding: 4rem 0;
 }
@@ -126,9 +126,9 @@ header {
   border-radius: 2px;
   background: #918874;
   border: none;
-}
+} */
 
-/* Service Section */
+/* Service Section
 .service-section {
   background: rgba(246, 246, 246, 0.83);
   padding: 4rem 0;
@@ -216,10 +216,9 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
+} */
 
-/* Portfolio Section */
-.portfolio-section {
+Portfolio Section .portfolio-section {
   padding: 4rem 0;
 }
 
@@ -272,7 +271,7 @@ header {
   text-decoration: none;
 }
 
-/* Testimonials Section */
+/* Testimonials Section
 .testimonial-section {
   padding: 3rem 2rem;
   background: rgba(246, 246, 246, 0.83);
@@ -329,10 +328,9 @@ header {
 
 .text p {
   padding: 0 20rem 0 0;
-}
+} */
 
-/* Blog Section */
-.blog-section {
+Blog Section .blog-section {
   background: url('./Images/blog-background.png') lightgray 50% / cover no-repeat;
   padding-top: 0;
   padding-bottom: 5rem;
@@ -401,14 +399,12 @@ header {
   top: 120px;
 }
 
-/* Add box-shadow to the blog box */
 .blog-box {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
   transition: box-shadow 0.6s ease-in-out,
     transform 0.6s ease-in-out;
 }
 
-/* Increase size and change box-shadow on hover */
 .blog-box:hover {
   box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
   transform: scale(1.05);
@@ -416,9 +412,7 @@ header {
 
 
 /* Contact Section */
-.contact-section {
-  padding: 4rem 0;
-}
+.contact-section {}
 
 .contact-section h4 {
   color: #151212;
@@ -653,6 +647,7 @@ footer p {
     margin-top: 2rem;
   }
 
+  /*  */
   .latest-blog {
     width: 95dvw;
     height: auto;

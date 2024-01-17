@@ -1,0 +1,1082 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Inter:wght@100;300;400;500;600;700&family=Montserrat&family=Montserrat+Alternates:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project {
+  margin: 4rem 0;
+}
+
+.project .col-md-4 {
+  background: #fff;
+  padding: 2rem 1rem;
+}
+
+.project .col-md-4 .tag {
+  display: inline-flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  background: #f6f6f6;
+}
+
+.project .col-md-4 .tag p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 12px;
+}
+
+.project .card {
+  background: #262525;
+  padding: 0;
+  height: auto;
+  border-radius: 0 5px 5px 0;
+}
+
+.project .card .card-img {
+  transition: opacity 1s ease-in-out;
+}
+
+.project .card .card-img:hover {
+  opacity: 0.1;
+}
+
+.project .card .card-img-overlay {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .card .card-img-overlay:hover {
+  opacity: 1;
+}
+
+.project .card .card-img-overlay p {
+  color: #f6f6f6;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../Images/Header.png") lightgray 50%/cover no-repeat;
+  flex-shrink: 0;
+}
+
+header .nav-link {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .hero {
+  padding: 12rem 0;
+  margin-left: auto;
+}
+
+header .hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inria Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .hero h1 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header .hero p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-family: Inria Sans;
+}
+
+header .hero button {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+header .hero .blog-header p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+header .hero .blog-header h4 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .hero .blog-header h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-section .col-md-4 {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+.about-section .col-md-8 {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+.about-section .socials p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.about-section .socials svg {
+  margin-bottom: 0.35rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.about-section button {
+  display: flex;
+  width: 200px;
+  padding: 9px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: #918874;
+  border: none;
+}
+
+.service-section {
+  background: rgba(246, 246, 246, 0.83);
+  padding: 4rem 0;
+}
+
+.service-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.service-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.service-section .services {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+.service-section .services h2 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.service-section .services h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.service-section .services p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.service-section .services .col-md-7 {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  height: auto;
+  flex-shrink: 0;
+  padding: 1rem 1rem;
+  background: #FFF;
+}
+
+.service-section .services .col-md-5 {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: normaal;
+  justify-content: center;
+}
+
+.service-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.service-section .skillsContainer .skills-container p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.service-section .skillsContainer .skills-container .skill .skill-indicator {
+  width: 500px;
+  height: 4px;
+  flex-shrink: 0;
+  background: #D9D9D9;
+}
+
+.service-section .skillsContainer .skills-container .skill .skill-indicator p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.service-section .skillsContainer .skills-container .skill .skill-indicator .indication-A {
+  width: 200px;
+  height: 4px;
+  background: #918874;
+}
+
+.service-section .skillsContainer .skills-container .skill .skill-indicator .indication-B {
+  width: 300px;
+  height: 4px;
+  background: #918874;
+}
+
+.service-section .skillsContainer .skills-container .skill .skill-indicator .indication-C {
+  width: 400px;
+  height: 4px;
+  background: #918874;
+}
+
+.portfolio-section {
+  padding: 4rem 0;
+}
+
+.portfolio-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.portfolio-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.portfolio-section .col-md-6 .card {
+  background: #262525;
+}
+
+.portfolio-section .col-md-6 .card .card-img {
+  transition: opacity 1s ease-in-out;
+}
+
+.portfolio-section .col-md-6 .card:hover .card-img {
+  opacity: 0.1;
+}
+
+.portfolio-section .col-md-6 .card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.portfolio-section .col-md-6 .card .card-body {
+  display: none;
+  text-decoration: none;
+}
+
+.portfolio-section .col-md-6 .card .card-img-overlay {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.portfolio-section .col-md-6 .card .card-img-overlay .tag {
+  display: inline-flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  background: #C6C4BE;
+}
+
+.portfolio-section .col-md-6 .card .card-img-overlay .tag p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
+
+.testimonial-section {
+  padding: 3rem 2rem;
+  background: rgba(246, 246, 246, 0.83);
+}
+
+.testimonial-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testimonial-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.testimonial-section .swiper-container .swiper-wrapper .swiper-slide .row {
+  display: flex;
+  align-items: align;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-section .swiper-container .swiper-wrapper .swiper-slide .row .col-lg-8 p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.testimonial-section .swiper-container .swiper-wrapper .swiper-slide .row .col-lg-8 h6 {
+  color: #000;
+  font-family: Inria Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+}
+
+.blog-section {
+  background: url("../Images/blog-background.png") lightgray 50%/cover no-repeat;
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+
+.blog-section .blog-description {
+  position: relative;
+  top: 120px;
+}
+
+.blog-section .blog-description h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.blog-section .blog-description h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.blog-section .blog-description p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.blog-section .blog {
+  width: 327px;
+  height: 180px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 2.5rem;
+  margin-top: 9rem;
+  margin-right: 2rem;
+}
+
+.blog-section h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blog-section p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.latest-blog {
+  width: 484px;
+  height: 300px;
+  flex-shrink: 0;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 6.45rem;
+  margin-top: 1.5rem;
+}
+
+.latest-blog h3 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.latest-blog p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+.blog-box {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
+  transition: box-shadow 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.blog-box:hover {
+  box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
+  transform: scale(1.05);
+}
+
+.blog-post {
+  padding: 4rem 2rem;
+}
+
+.blog-post .img-caption hr {
+  width: 1px;
+  height: 19px;
+  flex-shrink: 0;
+  background: #000;
+}
+
+.blog-post .img-caption p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 10px;
+}
+
+.blog-post p.bold {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.96px;
+}
+
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section h4 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-section h1 {
+  color: #151212;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-section .info {
+  width: 550px;
+}
+
+.contact-section .info p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  color: #151212;
+}
+
+.contact-section .info .contact-info {
+  height: 500px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.81);
+  padding-top: 8rem;
+  padding-left: 7rem;
+}
+
+.contact-section .info .contact-info h2 {
+  color: #FFF;
+  font-family: Inria Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-section .info .contact-info p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-section .col-md-6 #form {
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  padding: 2rem;
+}
+
+footer {
+  background: url("../Images/Footer.png") lightgray 50%/cover no-repeat;
+}
+
+footer .socials {
+  display: flex;
+  align-items: align;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+footer .socials svg {
+  margin-bottom: 0.35rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer .links {
+  display: flex;
+  align-items: align;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links a {
+  color: #bfdbf6;
+  font-weight: 400;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: align;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0.5rem 0;
+}
+
+footer .copyright p {
+  color: #151212;
+  font-family: Inria Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 767px) {
+  header .hero {
+    display: flex;
+    align-items: align;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+    margin-left: auto;
+  }
+
+  header .hero h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  header .hero h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .about-section {
+    padding: 4rem 0;
+  }
+
+  .about-section h4 {
+    font-size: 18px;
+  }
+
+  .about-section h1 {
+    font-size: 24px;
+  }
+
+  .about-section .socials p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .service-section h4 {
+    font-size: 18px;
+  }
+
+  .service-section h1 {
+    font-size: 24px;
+  }
+
+  .service-section .services h4 {
+    font-size: 18px;
+  }
+
+  .service-section .services h1 {
+    font-size: 24px;
+  }
+
+  .service-section .services p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .service-section h1 {
+    color: #151212;
+    font-family: Inria Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 4px;
+    font-size: 24px;
+  }
+
+  .service-section .skillsContainer .skills-container {
+    display: flex;
+    align-items: align;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-section .skillsContainer .skills-container p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .service-section .skillsContainer .skills-container .skill .skill-indicator p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .service-section .skillsContainer .skills-container .skill .skill-indicator .indication-A {
+    width: 100px;
+  }
+
+  .service-section .skillsContainer .skills-container .skill .skill-indicator .indication-B {
+    width: 195px;
+  }
+
+  .service-section .skillsContainer .skills-container .skill .skill-indicator .indication-C {
+    width: 285px;
+  }
+
+  .portfolio-section {
+    padding: 4rem 0;
+  }
+
+  .portfolio-section h4 {
+    font-size: 18px;
+  }
+
+  .portfolio-section h1 {
+    font-size: 24px;
+  }
+
+  .portfolio-section .col-md-6 .card {
+    background: #262525;
+  }
+
+  .portfolio-section .col-md-6 .card .card-img {
+    transition: opacity 1s ease-in-out;
+  }
+
+  .portfolio-section .col-md-6 .card .card-body {
+    display: block;
+  }
+
+  .testimonial-section {
+    padding: 0.5rem 2rem;
+  }
+
+  .testimonial-section h4 {
+    font-size: 18px;
+  }
+
+  .testimonial-section h1 {
+    font-size: 24px;
+  }
+
+  .blog-section {
+    display: flex;
+    align-items: align;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-section .blog-description {
+    position: relative;
+    top: 2rem;
+  }
+
+  .blog-section .blog-description h4 {
+    font-size: 18px;
+  }
+
+  .blog-section .blog-description h1 {
+    font-size: 24px;
+  }
+
+  .blog-section .blog-description p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+    padding: 0 2rem 0 0;
+  }
+
+  .blog-section .blog {
+    width: 95dvw;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .latest-blog {
+    width: 95dvw;
+    height: auto;
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .blog-post {
+    padding: 1rem 0.3rem;
+  }
+
+  .blog-post .img-caption hr {
+    width: 1px;
+    height: 19px;
+    flex-shrink: 0;
+    background: #000;
+  }
+
+  .blog-post .img-caption p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .blog-post p.bold {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+  }
+
+  .blog-post img {
+    width: 100%;
+  }
+
+  .blog-post h4 {
+    font-size: 18px;
+  }
+
+  .blog-post h1 {
+    font-size: 24px;
+  }
+
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .contact-section h4 {
+    font-size: 18px;
+  }
+
+  .contact-section h1 {
+    font-size: 24px;
+  }
+
+  .contact-section p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .info {
+    margin-top: 0.3rem;
+    width: auto;
+  }
+
+  .info p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .info .contact-info {
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .info .contact-info p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+  }
+
+  .col-md-6 #form {
+    width: auto;
+    height: auto;
+  }
+
+  footer .links {
+    display: flex;
+    align-items: align;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .copyright {
+    display: flex;
+    align-items: align;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0.5rem 0;
+  }
+
+  footer .copyright p {
+    color: #151212;
+    font-family: Inria Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 12px;
+    color: #FFF;
+  }
+}
+
+/* Laptop */
+/*# sourceMappingURL=scss-styles.css.map */
