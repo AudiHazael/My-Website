@@ -721,6 +721,11 @@ footer .copyright p {
     line-height: normal;
     font-size: 14px;
   }
+  .about-section .col-md-8 .socials svg {
+    margin-bottom: 0.35rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   .service-section h4 {
     font-size: 18px;
   }
@@ -938,9 +943,9 @@ footer .copyright p {
     font-size: 12px;
   }
   .info .contact-info {
-    width: auto;
+    width: 95dvw;
     height: auto;
-    padding: 2rem 0;
+    padding: 2rem 0 2rem 1rem;
   }
   .info .contact-info p {
     color: #151212;
@@ -949,6 +954,7 @@ footer .copyright p {
     font-weight: 400;
     line-height: normal;
     font-size: 12px;
+    max-width: 80dvw;
   }
   .col-md-6 #form {
     width: 95dvw;

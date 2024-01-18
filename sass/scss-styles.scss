@@ -639,6 +639,14 @@ footer {
       p {
         @include paragraphStyle(14px)
       }
+
+      .socials {
+        svg {
+          margin-bottom: .35rem;
+          margin-left: .5rem;
+          margin-right: .5rem;
+        }
+      }
     }
   }
 
@@ -867,13 +875,14 @@ footer {
     }
 
     .contact-info {
-      width: auto;
+      width: 95dvw;
       height: auto;
 
-      padding: 2rem 0;
+      padding: 2rem 0 2rem 1rem;
 
       p {
         @include paragraphStyle(12px);
+        max-width: 80dvw;
       }
     }
   }
