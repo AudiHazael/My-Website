@@ -602,6 +602,7 @@ header .hero .blog-header h1 {
   line-height: normal;
   font-size: 16px;
   color: #151212;
+  width: auto;
 }
 .contact-section .info .contact-info {
   height: 500px;
@@ -939,7 +940,7 @@ footer .copyright p {
   .info .contact-info {
     width: auto;
     height: auto;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0;
   }
   .info .contact-info p {
     color: #151212;

@@ -520,6 +520,7 @@ header {
     p {
       @include paragraphStyle(16px);
       color: $primaryTextColor;
+      width: auto;
     }
 
     .contact-info {
@@ -868,7 +869,8 @@ footer {
     .contact-info {
       width: auto;
       height: auto;
-      padding: 2rem 0 2rem 0;
+
+      padding: 2rem 0;
 
       p {
         @include paragraphStyle(12px);
