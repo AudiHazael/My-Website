@@ -392,6 +392,7 @@ header {
   .blog-description {
     position: relative;
     top: 120px;
+    left: 50px;
 
     h4 {
       @include titleStyle();
@@ -407,6 +408,10 @@ header {
       @include paragraphStyle(14px);
       color: #FFF;
     }
+  }
+
+  .row {
+    @include flexCenter(row, center)
   }
 
   .blog {
@@ -731,7 +736,7 @@ footer {
 
   // Testimonial Section
   .testimonial-section {
-    padding: .5rem 2rem;
+    padding: 4rem .5rem;
 
     h4 {
       font-size: 18px;
@@ -753,6 +758,7 @@ footer {
     .blog-description {
       position: relative;
       top: 2rem;
+      left: 0;
 
       h4 {
         font-size: 18px;
@@ -770,10 +776,16 @@ footer {
     }
 
     .row {
+      @include flexCenter(column, center)
+    }
+
+
+    .row {
       .blog {
         width: 95dvw;
         height: auto;
         margin-top: 2rem;
+        margin-right: 0rem;
       }
 
       .latest-blog {
@@ -847,7 +859,7 @@ footer {
 
   .info {
     margin-top: .3rem;
-    width: auto;
+    width: 95dvw;
 
     p {
       @include paragraphStyle(12px);
@@ -856,8 +868,7 @@ footer {
     .contact-info {
       width: auto;
       height: auto;
-      padding-top: 2rem;
-      padding-left: 2rem;
+      padding: 2rem 0 2rem 0;
 
       p {
         @include paragraphStyle(12px);
@@ -867,7 +878,7 @@ footer {
 
   .col-md-6 {
     #form {
-      width: auto;
+      width: 95dvw;
       height: auto;
     }
   }
@@ -887,6 +898,7 @@ footer {
       p {
         @include paragraphStyle(12px);
         color: #FFF;
+        text-align: center;
       }
     }
   }
