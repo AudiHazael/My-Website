@@ -70,7 +70,7 @@ a {
 // Header and Navigation
 
 header {
-  background: url('./Images/Header.png') lightgray 50% / cover no-repeat;
+  background: url('../Images/Header.png') lightgray 50% / cover no-repeat;
   flex-shrink: 0;
 
   .nav-link {
@@ -169,6 +169,10 @@ header {
 
   .col-md-8 {
     @include flexCenter(column, normal);
+
+    p {
+      @include paragraphStyle(16px)
+    }
   }
 
   .socials {
@@ -381,7 +385,7 @@ header {
 
 // Blog Section
 .blog-section {
-  background: url('./Images/blog-background.png') lightgray 50% / cover no-repeat;
+  background: url('../Images/blog-background.png') lightgray 50% / cover no-repeat;
   padding-top: 0;
   padding-bottom: 5rem;
 
@@ -430,41 +434,41 @@ header {
     color: $secondaryTextColor;
     font-weight: 300;
   }
-}
 
-.latest-blog {
-  width: 484px;
-  height: 300px;
-  flex-shrink: 0;
-  border: 1px solid #FFF;
-  background: rgba(255, 255, 255, 0.10);
-  padding-top: 6.45rem;
-  margin-top: 1.5rem;
+  .latest-blog {
+    width: 484px;
+    height: 300px;
+    flex-shrink: 0;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    padding-top: 6.45rem;
+    margin-top: 1.5rem;
 
-  h3 {
-    color: #FFF;
-    font-family: Inria Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    h3 {
+      color: #FFF;
+      font-family: Inria Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      @include paragraphStyle(14px);
+      color: $secondaryTextColor;
+      font-weight: 300;
+    }
   }
 
-  p {
-    @include paragraphStyle(14px);
-    color: $secondaryTextColor;
-    font-weight: 300;
-  }
-}
+  .blog-box {
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
+    transition: box-shadow 0.6s ease-in-out,
+      transform 0.6s ease-in-out;
 
-.blog-box {
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
-  transition: box-shadow 0.6s ease-in-out,
-    transform 0.6s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
-    transform: scale(1.05);
+    &:hover {
+      box-shadow: 0 0 20px rgba(163, 163, 163, 0.397);
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -549,7 +553,7 @@ header {
 
 // Footer
 footer {
-  background: url('./Images/Footer.png') lightgray 50% / cover no-repeat;
+  background: url('../Images/Footer.png') lightgray 50% / cover no-repeat;
 
   .socials {
     @include flexCenter(row, center);
@@ -590,6 +594,11 @@ footer {
   // Header and Navigation
 
   header {
+    .navbar-brand img {
+      width: 150px;
+      height: auto;
+    }
+
     .hero {
       @include flexCenter(column, center);
       padding: 6rem 0;
@@ -620,10 +629,9 @@ footer {
       font-size: 24px;
     }
 
-
-    .socials {
+    .col-md-8 {
       p {
-        @include paragraphStyle(12px);
+        @include paragraphStyle(14px)
       }
     }
   }
@@ -650,7 +658,7 @@ footer {
       }
 
       p {
-        @include paragraphStyle(12px);
+        @include paragraphStyle(14px);
       }
     }
 
@@ -670,8 +678,10 @@ footer {
 
         .skill {
           .skill-indicator {
+            width: 90dvw;
+
             p {
-              @include paragraphStyle(12px)
+              @include paragraphStyle(14px)
             }
 
             .indication-A {
@@ -730,6 +740,10 @@ footer {
     h1 {
       font-size: 24px;
     }
+
+    p {
+      @include paragraphStyle(14px);
+    }
   }
 
   // Blog Section
@@ -749,27 +763,31 @@ footer {
       }
 
       p {
-        @include paragraphStyle(12px);
+        @include paragraphStyle(14px);
+        color: $secondaryTextColor;
         padding: 0 2rem 0 0;
       }
     }
 
-    .blog {
-      width: 95dvw;
-      height: auto;
-      margin-top: 2rem;
+    .row {
+      .blog {
+        width: 95dvw;
+        height: auto;
+        margin-top: 2rem;
+      }
+
+      .latest-blog {
+        width: 95dvw;
+        height: auto;
+        padding-top: .5rem;
+        margin-top: 2rem;
+      }
+
+      .break {
+        display: none;
+      }
     }
-  }
 
-  .latest-blog {
-    width: 95dvw;
-    height: auto;
-    padding-top: .5rem;
-    margin-top: 2rem;
-  }
-
-  .break {
-    display: none;
   }
 
   // Blog Page
