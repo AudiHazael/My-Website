@@ -340,6 +340,25 @@ header {
       }
     }
   }
+
+  .col-md-8 {
+    .card-img-overlay {
+      p {
+        color: #bfdbf6;
+      }
+    }
+  }
+}
+
+.project {
+  @include flexCenter(column, center);
+  justify-content: center;
+
+  .col-md-4 {
+    h3 {
+      font-size: 20px
+    }
+  }
 }
 
 // Testimonial Section
@@ -588,7 +607,7 @@ footer {
 
     p {
       @include paragraphStyle(16px);
-      font-weight: 300;
+      font-weight: 400;
       color: #FFF;
     }
   }

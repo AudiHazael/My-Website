@@ -388,6 +388,21 @@ header .hero .blog-header h1 {
   color: #000;
   text-align: center;
 }
+.portfolio-section .col-md-8 .card-img-overlay p {
+  color: #bfdbf6;
+}
+
+.project {
+  display: flex;
+  align-items: align;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.project .col-md-4 h3 {
+  font-size: 20px;
+}
 
 .testimonial-section {
   padding: 3rem 2rem;
@@ -678,7 +693,7 @@ footer .copyright p {
   font-weight: 400;
   line-height: normal;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFF;
 }
 
